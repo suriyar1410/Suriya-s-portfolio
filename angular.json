@@ -38,7 +38,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/Suriya-s-portfolio/",
+              "baseHref": "/",
               "budgets": [
                 
                 
