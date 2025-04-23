@@ -1,0 +1,526 @@
+.bungee{
+    font-family: Gugi;
+    font-weight:600;
+  }
+  .navbar{
+    padding: 15px 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .navbar-brand{
+    font-size: 30px;
+    font-weight:bolder;
+    color: #f7af21;
+    padding-left: 40px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    font-weight:bolder;
+    margin-right: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  
+  .nav-link:hover {
+    background-color: #f7af21;  
+    color: #fff;               
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+  }
+  
+  /*hero section*/
+.hero-section {
+    height: 90vh;
+    border-color: #ececec;
+    /* background-image: url('../../assets/headbg.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-image-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: inline-block;
+  }
+  
+  .profile-img {
+    margin-top: -15px;
+    height: 80vh;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  }
+  
+  .hero-text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    border: 4px solid #f7af21;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.5); 
+    text-align: center;
+    padding: 15px;
+  }
+  .cv-btn{
+    font-family: Gugi;
+    font-size: small;
+    font-weight: 100;
+    color: #FF8C00;
+    text-shadow: none;
+    text-decoration: none;
+  }
+
+  /*second section*/
+/*About*/
+  .sec-section {
+    font-family: Hanuman;
+    font-weight: 400;
+    height:auto; 
+    background-color: #f5deb3; 
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+  }
+
+  .heading-wrapper{
+    text-align: center;
+  }
+  h3 {
+    font-family: Gugi;
+    font-weight: 400;
+    color: #fff;
+    background: #FFBF00;
+    font-size: 28px;
+    margin: 20px auto; 
+    display: inline-block; 
+    padding: 6px 16px; 
+    border-radius: 8px; 
+    text-align: center;
+  }
+  
+.company{
+  font-family: "Winky Rough", sans-serif;
+  color: #333;
+  font-size: larger;
+  font-weight: bolder;
+}
+  .position{
+    color:#FFBF00;
+    text-shadow: 0px 2px 2px black;
+    font-size: larger;
+    font-weight: bolder;
+    padding-left: 10px;
+  }
+  .about {
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; 
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+
+  .suriya{
+    width: 100%;
+    height: 85%;
+    border: 4px solid #f7af21;
+    border-radius: 20px;
+  }
+  .circle-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 40px;
+    position: relative;
+  }
+  
+  .circle {
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border: 4px solid #f7af21;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle:hover {
+    animation: bounce 0.6s ease-in-out;
+  }
+  @keyframes bounce {
+    0%   { transform: translateY(0) scale(1); }
+    30%  { transform: translateY(-25px) scale(1.05); }
+    50%  { transform: translateY(0) scale(1); }
+    70%  { transform: translateY(-20px) scale(1.03); }
+    100% { transform: translateY(0) scale(1); }
+  }
+  .circle img {
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
+  }
+  .circle::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    width: 2px;
+    height: 30px;
+    background: #333;
+  }
+  @media (max-width: 768px) {
+    .circle {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .box-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 4px solid #f7af21;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box img {
+    width: 90%;
+    height: 80%;
+    object-fit: fill;
+  }
+  .box:hover {
+    transform: translateY(-20px);
+  }
+  .square-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .square-box {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 4px solid #f7af21;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  }
+  .square-box img {
+    width: 90%;
+    height: 80%;
+    object-fit: fill;
+  }
+  .from-left {
+    transform: translateX(-200px);
+  }
+  .from-right {
+    transform: translateX(200px);
+  }
+  .in-view {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+ 
+  /*projects*/
+
+  .projects{
+    height: auto; 
+    background-color: #fff; 
+    background-image: url('../assets/bg-img023023023\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+  }
+  .pro-heading{
+    font-family: Gugi;
+    font-weight: 400;
+    color: #f7af21;
+    background-color: #333;
+    font-size: 28px;
+    margin: 20px auto; 
+    display: inline-block; 
+    padding: 6px 16px; 
+    border-radius: 8px; 
+    text-align: center;
+  }
+
+  .project-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  .cardsize {
+    width: auto;
+    height: 30vh;
+    background: white;
+    border: 4px solid #f7af21;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .cardsize img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+  .cardsize p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .cardsize a {
+    color: #f7af21;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .cardsize a:hover {
+   color: black;
+  }
+  
+
+  /*contact*/
+
+  .contact{
+    height: 70vh; 
+    background-image: url('../assets/contact_us_5a6756504e.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+  }
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-form-wrapper {
+    width: 50%;
+    background-color: rgba(232, 231, 231, 0.7);
+    border:  4px solid #f7af21; 
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .btn-primary {
+    background-color: #FFA500; 
+    border-color: #FFA500;
+  }
+  
+  .btn-primary:hover {
+    background-color: #474646;
+    border-color: #FF8C00;
+  }
+  
+  .text-danger {
+    font-size: 0.8em;
+  }
+  
+
+
+
+  .social-links .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: #FFA500; 
+    color: white;
+    font-size: 20px; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-links .linkedin:hover {
+    background-color: #005682;
+  }
+  
+  .social-links .github:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .social-links .gmail:hover {
+    background-color: #D44638;
+  }
+  
+  .social-links .website:hover {
+    background-color: #007bff; 
+  }
+  
+  .social-links .instagram:hover {
+    background-color: #E4405F; 
+  }
+
+
+
+
+
+
+  .social-nav-icons {
+    gap: 20px; /* Space between icons */
+  }
+  
+  .social-nav-icons .nav-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:35px; /* Adjust size as needed */
+    height: 35px; /* Adjust size as needed */
+    border-radius: 6px; /* Small rounded corners */
+    background-color: #FFA500; /* Default light orange background */
+    color: white;
+    font-size: 14px; /* Adjust icon size as needed */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-nav-icons .nav-icon:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+  }
+  
+  /* Optional: Specific background colors on hover (you can customize) */
+  .social-nav-icons .linkedin:hover {
+    background-color: #005682;
+  }
+  
+  .social-nav-icons .github:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .social-nav-icons .gmail:hover {
+    background-color: #D44638;
+  }
+  
+  .social-nav-icons .instagram:hover {
+    background-color: #E4405F;
+  }
+  
+  /* Responsive Design (adjust breakpoints as needed) */
+  @media (max-width: 992px) { /* For smaller screens where the navbar collapses */
+    .navbar-collapse {
+      justify-content: center !important; /* Center links in collapsed menu */
+    }
+    .social-nav-icons {
+      display: flex; /* Make icons appear below or alongside links */
+      justify-content: center; /* Center the icons */
+      margin-top: 10px; /* Add some space above the icons */
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) { 
+    .social-nav-icons {
+      gap: 10px;
+    }
+    .social-nav-icons .nav-icon {
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+    }
+  }
+
+
+
+
+  #backToTopBtn {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: #FFA500; 
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #1a1a1a; 
+  }
+  
+  #backToTopBtn i {
+    margin-top: -2px; 
+  }
+
+.empty{
+  background-color: #FF8C00;
+  min-height: 50px;
+}
